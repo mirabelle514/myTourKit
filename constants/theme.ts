@@ -1,4 +1,4 @@
-export const lightTheme = {
+export const theme = {
   colors: {
     primary: {
       50: '#F3F0FF',
@@ -72,10 +72,6 @@ export const lightTheme = {
       800: '#1F2937',
       900: '#111827',
     },
-    background: '#FFFFFF',
-    text: '#111827',
-    card: '#FFFFFF',
-    border: '#E5E7EB',
   },
   shadows: {
     xs: {
@@ -114,40 +110,4 @@ export const lightTheme = {
       elevation: 8,
     },
   },
-};
-
-export const darkTheme = {
-  colors: {
-    ...lightTheme.colors,
-    primary: {
-      ...lightTheme.colors.primary,
-      50: '#2E1065',
-      100: '#3B1773',
-      200: '#4C1D95',
-      300: '#5B21B6',
-      400: '#7C3AED',
-      500: '#8B5CF6',
-      600: '#A78BFC',
-      700: '#C9B8FE',
-      800: '#E5DBFF',
-      900: '#F3F0FF',
-    },
-    gray: {
-      50: '#18181B',
-      100: '#27272A',
-      200: '#3F3F46',
-      300: '#52525B',
-      400: '#71717A',
-      500: '#A1A1AA',
-      600: '#D4D4D8',
-      700: '#E4E4E7',
-      800: '#F4F4F5',
-      900: '#FAFAFA',
-    },
-    background: '#18181B',
-    text: '#F4F4F5',
-    card: '#27272A',
-    border: '#3F3F46',
-  },
-  shadows: lightTheme.shadows,
 };
