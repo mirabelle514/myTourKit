@@ -13,6 +13,8 @@ export default function TabLayout() {
         tabBarStyle: styles.tabBar,
         tabBarLabelStyle: styles.tabBarLabel,
         headerShown: false,
+        tabBarShowLabel: true,
+        tabBarItemStyle: styles.tabBarItem,
       }}>
       <Tabs.Screen
         name="index"
@@ -83,16 +85,31 @@ export default function TabLayout() {
 
 const styles = StyleSheet.create({
   tabBar: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
     backgroundColor: '#FFFFFF',
     borderTopWidth: 1,
     borderTopColor: '#E5E7EB',
     height: Platform.OS === 'ios' ? 88 : 64,
     paddingBottom: Platform.OS === 'ios' ? 28 : 8,
     paddingTop: 12,
+    elevation: 8,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: -4,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
   },
   tabBarLabel: {
     fontSize: 11,
     fontFamily: 'Inter-Medium',
     marginTop: 4,
+  },
+  tabBarItem: {
+    paddingTop: 8,
   },
 });
