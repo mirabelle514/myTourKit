@@ -77,7 +77,7 @@ export default function UpcomingShow({ show }: UpcomingShowProps) {
             title="Schedule" 
             variant="outline" 
             size="sm"
-            onPress={() => router.push('/(tabs)/schedule')}
+            onPress={() => router.push('/tabs/schedule')}
             style={{ flex: 1, marginRight: 8 }}
           />
           
@@ -85,7 +85,7 @@ export default function UpcomingShow({ show }: UpcomingShowProps) {
             title="Venue Details" 
             variant="primary" 
             size="sm"
-            onPress={() => router.push('/(tabs)/venues')}
+            onPress={() => router.push('/tabs/venues')}
             style={{ flex: 1 }}
           />
         </View>
