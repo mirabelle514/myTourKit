@@ -143,6 +143,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter-SemiBold',
     color: theme.colors.gray[900],
   },
+  
   chatTime: {
     fontSize: 14,
     fontFamily: 'Inter-Regular',

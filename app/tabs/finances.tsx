@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
-import { ArrowDown, ArrowUp, ChevronRight, DollarSign, Plus, Ticket } from 'lucide-react-native';
+import { ArrowDown, ArrowUp, ChevronRight, DollarSign, Plus } from 'lucide-react-native';
 import { theme } from '@/constants/theme';
 import Header from '@/components/layout/Header';
 import { mockFinancialData, mockTransactions } from '@/data/mockData';

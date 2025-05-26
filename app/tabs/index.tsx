@@ -34,7 +34,7 @@ export default function HomeScreen() {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Next Show</Text>
-            <TouchableOpacity onPress={() => router.push('/(tabs)/schedule')}>
+            <TouchableOpacity onPress={() => router.push('/tabs/schedule')}>
               <Text style={styles.seeAll}>See Schedule</Text>
             </TouchableOpacity>
           </View>
@@ -48,28 +48,28 @@ export default function HomeScreen() {
           </View>
           
           <View style={styles.actionGrid}>
-            <TouchableOpacity style={styles.actionItem} onPress={() => router.push('/(tabs)/schedule')}>
+            <TouchableOpacity style={styles.actionItem} onPress={() => router.push('/tabs/schedule')}>
               <View style={[styles.actionIcon, { backgroundColor: theme.colors.primary[50] }]}>
                 <Calendar size={24} color={theme.colors.primary[600]} />
               </View>
               <Text style={styles.actionText}>Schedule</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={styles.actionItem} onPress={() => router.push('/(tabs)/venues')}>
+            <TouchableOpacity style={styles.actionItem} onPress={() => router.push('/tabs/venues')}>
               <View style={[styles.actionIcon, { backgroundColor: theme.colors.teal[50] }]}>
                 <MapPin size={24} color={theme.colors.teal[600]} />
               </View>
               <Text style={styles.actionText}>Venues</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={styles.actionItem} onPress={() => router.push('/(tabs)/messages')}>
+            <TouchableOpacity style={styles.actionItem} onPress={() => router.push('/tabs/messages')}>
               <View style={[styles.actionIcon, { backgroundColor: theme.colors.orange[50] }]}>
                 <MessageSquare size={24} color={theme.colors.orange[600]} />
               </View>
               <Text style={styles.actionText}>Messages</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={styles.actionItem} onPress={() => router.push('/(tabs)/finances')}>
+            <TouchableOpacity style={styles.actionItem} onPress={() => router.push('/tabs/finances')}>
               <View style={[styles.actionIcon, { backgroundColor: theme.colors.green[50] }]}>
                 <Music size={24} color={theme.colors.green[600]} />
               </View>
@@ -81,7 +81,7 @@ export default function HomeScreen() {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={styles.sectionTitle}>Upcoming Shows</Text>
-            <TouchableOpacity onPress={() => router.push('/(tabs)/schedule')}>
+            <TouchableOpacity onPress={() => router.push('/tabs/schedule')}>
               <Text style={styles.seeAll}>View All</Text>
             </TouchableOpacity>
           </View>
