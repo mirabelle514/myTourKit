@@ -24,7 +24,6 @@ export default function RootLayout() {
     }
   }, [fontsLoaded, fontError]);
 
-  // Return null to keep splash screen visible while fonts load
   if (!fontsLoaded && !fontError) {
     return null;
   }
@@ -33,7 +32,6 @@ export default function RootLayout() {
     <>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="tabs" options={{ headerShown: false }} />
-        <Stack.Screen name="notfound" />
       </Stack>
       <StatusBar style="auto" />
     </>
